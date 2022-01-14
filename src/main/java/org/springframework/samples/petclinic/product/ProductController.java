@@ -29,7 +29,7 @@ public class ProductController {
 	
 	@ModelAttribute("productTypes")
 	public List<ProductType> populatePetTypes() {
-		return this.ps.getAllProductTypes();
+		return this.ps.findAllProductTypes();
 	}
 	 
 	@GetMapping(value = "/product/create")

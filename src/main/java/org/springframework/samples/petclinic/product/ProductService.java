@@ -16,7 +16,7 @@ public class ProductService {
     }
 	
 	@Transactional(readOnly = true)
-    public List<ProductType> getAllProductTypes(){
+    public List<ProductType> findAllProductTypes(){
         return pr.findAllProductTypes();
     }
 	
@@ -28,7 +28,7 @@ public class ProductService {
     public ProductType getProductType(String typeName) {
         return pr.getProductType(typeName);
     }
-	@Transactional(readOnly = true)
+
     public Product save(Product p){
         return pr.save(p);       
     }
