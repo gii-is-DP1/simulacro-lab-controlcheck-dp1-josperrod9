@@ -38,7 +38,8 @@ public class Test2 {
     {
         ProductType p=new ProductType();
         p.setId(7);
-        p.setName("Toys");        
+        p.setName("Toys");  
+        
     }  
 
     
